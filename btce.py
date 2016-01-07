@@ -89,7 +89,7 @@ if __name__ == '__main__':
 
         if open_orders == 0 and nonce == -1:
             # print 'No open orders, time to send an email'
-            # send_mail('No open orders, login and check status: https://btc-e.com/')
+            send_mail('No open orders, login and check status: https://btc-e.com/')
             break
 
         elif open_orders > 0 and nonce == -1:
