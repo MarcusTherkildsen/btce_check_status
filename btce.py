@@ -26,8 +26,8 @@ def contact_btce(key, secret, nonce):
     headers = {"Content-type": "application/x-www-form-urlencoded",
                "Key": BTC_api_key,
                "Sign": sign}
-			   
-	# Connect to BTC-e and get response
+
+    # Connect to BTC-e and get response
     conn = httplib.HTTPSConnection("btc-e.com")
     conn.request("POST", "/tapi", params, headers)
     response = json.load(conn.getresponse())
